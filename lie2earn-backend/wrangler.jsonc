@@ -1,0 +1,6 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lie2earn-backend",
+  "compatibility_date": "2024-04-01",
+  "main": "./src/index.tsx"
+}

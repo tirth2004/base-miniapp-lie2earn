@@ -1,0 +1,22 @@
+{
+  "name": "lie2earn-backend",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "$npm_execpath run build && vite preview",
+    "deploy": "$npm_execpath run build && wrangler deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@farcaster/quick-auth": "^0.0.7",
+    "hono": "^4.8.5",
+    "ngrok": "^5.0.0-beta.2"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.2.3",
+    "vite": "^6.3.5",
+    "vite-ssr-components": "^0.3.0",
+    "wrangler": "^4.17.0"
+  }
+}
